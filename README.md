@@ -1,7 +1,7 @@
 ## RIHA Visualiseerija / _RIHA-Visualizer_
 RIHA API-de andmeil põhinevad visuaalid / _Data visualisations built on RIHA API-s_
 
-## Status.html
+### Status.html
 - Lihtne diagramm infosüsteemide statistikaga staatuste järgi
 - Andmetoide RIHA [Avaldaja](https://e-gov.github.io/RIHA-Launcher/Avaldaja) API-st.
 - Tehnoloogia: [Google Charts](https://developers.google.com/chart/) + Javascript.
