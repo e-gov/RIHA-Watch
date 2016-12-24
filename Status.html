@@ -29,7 +29,7 @@
     $('#kell').text(a.toUTCString());
 
     // Võta Avaldaja API-st andmed
-    var endpoint = 'http://ec2-35-160-53-79.us-west-2.compute.amazonaws.com:8081/systems.json';
+    var endpoint = 'https://ec2-35-160-53-79.us-west-2.compute.amazonaws.com:8081/systems.json';
 
     // NB! Non-blocking
     $.getJSON(endpoint, function (data) {
