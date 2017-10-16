@@ -45,9 +45,9 @@
     <div class='row'>
       <div class='col-xs-12 col-sm-10 col-md-10 col-lg-8 col-xl-6'>
 
-        <h1>Masinloetav RIHA</h1>
+        <h1>Masinloetava RIHA demo ja test</h1>
 
-        <p>RIHA masinloetavate andmete kasutamise demorakendus.</p>
+        <p>võrdluses avalike teenuste kataloogiga</p>
 
         <table class='table'>
           <thead>
@@ -61,11 +61,11 @@
             <tr>
               <th scope='row'>URL</th>
               <td>https://test.riha.ee/api/v1<br>
-                <i class="ikoon material-icons nok">cancel</i>
+                <i class="ikoon material-icons ok">cancel</i>
               </td>
               <td>
                 https://www.riigiteenused.ee/api<br>
-                <i class="ikoon material-icons nok">cancel</i>
+                <i class="ikoon material-icons ok">cancel</i>
               </td>
             </tr>
             <tr>
@@ -84,29 +84,51 @@
             <tr>
               <th scope='row'>API kirjeldus (masinloetav)</th>
               <td>
-                <a href='https://raw.githubusercontent.com/e-gov/RIHA-Browser/master/backend/src/main/resources/static/swagger.yaml' target='_new'>https://raw.githubusercontent.com/e-gov/RIHA-Browser/master/backend/src/main/resources/static/swagger.yaml</a> (YAML)<br>
-                <a href='https://github.com/e-gov/RIHA-Browser/blob/master/backend/src/main/resources/infosystem_schema.json'
-                  target="_new">https://github.com/e-gov/RIHA-Browser/blob/master/backend/src/main/resources/infosystem_schema.json</a> (süntaks värvitult)
+                <a href='https://raw.githubusercontent.com/e-gov/RIHA-Browser/master/backend/src/main/resources/static/swagger.yaml' target='_new'>https://raw.githubusercontent.com/e-gov/RIHA-Browser/master/backend/src/main/resources/static/swagger.yaml</a>                (YAML)<br>
+                <a href='https://github.com/e-gov/RIHA-Browser/blob/master/backend/src/main/resources/infosystem_schema.json' target="_new">https://github.com/e-gov/RIHA-Browser/blob/master/backend/src/main/resources/infosystem_schema.json</a>                (süntaks värvitult)
                 <br>
                 <i class="ikoon material-icons ok">done</i>
               </td>
               <td>
-                <a href='https://www.riigiteenused.ee/api/swagger-ui#' target='_new'>https://www.riigiteenused.ee/api/swagger-ui#</a> (Swagger)
+                <a href='https://www.riigiteenused.ee/api/swagger-ui#' target='_new'>https://www.riigiteenused.ee/api/swagger-ui#</a>                (Swagger)
                 <br>
                 <i class="ikoon material-icons nok">cancel</i>
+              </td>
+            </tr>
+            <tr>
+              <th scope='row'>kasutamine sirvija Javascript-is</th>
+              <td>
+                Vaja CORS sisse lülitada
+                <i class="ikoon material-icons nok">cancel</i>
+              </td>
+              <td>
+                Vaja CORS sisse lülitada
+                <i class="ikoon material-icons nok">cancel</i>
+              </td>
+            </tr>
+            <tr>
+              <th scope='row'>kasutamine backend-i kaudu</th>
+              <td>
+                <button id='SysteemideArv' type="button" class="btn btn-secondary">Süsteemide arv?</button><br>
+                <i class="ikoon material-icons ok">done</i>
+              </td>
+              <td>
+                <div id='ParinguValik' class='m-6'>
+                  <button id='Riigiteenused' type="button" class="btn btn-secondary">Avalike teenuste arv?</button><br>
+                  <i class="ikoon material-icons ok">done</i>
+                </div>
+                <i class="ikoon material-icons ok">done</i>
               </td>
             </tr>
           </tbody>
         </table>
 
-        <div id='ParinguValik' class='m-6'>
-          <button id='SysteemideArv' type="button" class="btn btn-secondary">Süsteemide arv?</button>
-          <button id='Riigiteenused' type="button" class="btn btn-secondary">Avalikud teenused</button>
-        </div>
+
         <div id='Tulemus' class='m-6'></div>
 
       </div>
     </div>
+  </div>
 </body>
 
 </html>
