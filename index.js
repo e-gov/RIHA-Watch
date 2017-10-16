@@ -22,9 +22,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/systeeme', (req, res) => {
-  res.status(200).send('Kes teab?');
-  return
-  console.log('*** Süsteeme? ***');
+  console.log('*** Süsteeme? Päring RIHAsse... ***');
   requestModule({
     url: 'https://test.riha.ee/api/v1/systems',
     method: 'GET'
@@ -34,9 +32,9 @@ app.get('/systeeme', (req, res) => {
         console.log('Viga: ', error);
       }
       if (response) {
-        console.log('Staatus: ', response.statusCode);
+        console.log('Päring RIHAsse - staatus: ', response.statusCode);
         res.status(200)
-          .render('pages/salvestatud', body);
+          .send(body);
       }
   });
 });

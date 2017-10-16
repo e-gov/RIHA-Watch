@@ -28,20 +28,16 @@
       function alusta() {
         $('#SysteemideArv').click(() => {
           var u = 'https://apidemojatest.herokuapp.com/systeeme';
-          /*
           fetch(u)
             .then(function (data) {
               console.log('Andmed saadud');
+              var obj = JSON.parse(data);
+              $('#Tulemus').html('<p>RIHAs on kirjeldatud ' + obj.totalElements + 'süsteemi</p>');
             })
             .catch(function (error) {
               console.log('Andmete saamine ebaõnnestus');
             });
-          return; */
-
-          $.getJSON(u, (data, status) => {
-            console.log('Andmed saadud');
-            $('#Tulemus').html('<p>RIHAs on kirjeldatud ' + data.totalElements + 'süsteemi</p>');
-          });
+          return;
         });
         $('#Riigiteenused').click(() => {
           $.getJSON('https://apidemojatest.herokuapp.com/avalikud', (data) => {
