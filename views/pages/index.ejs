@@ -26,8 +26,9 @@
   <script>
     function alusta() {
       $('#SysteemideArv').click(() => {
-        $.getJSON('https://apidemojatest/systeeme', (data) => {
-          $('#Tulemus').html('<p>RIHAs on kirjeldatud ' + data.totalElements + 'süsteemi</p>');
+        $.get('https://apidemojatest/systeeme', (data, status) => {
+          $('#Tulemus').html('Andmed saadud');
+          // $('#Tulemus').html('<p>RIHAs on kirjeldatud ' + data.totalElements + 'süsteemi</p>');
         });
       });
       $('#Riigiteenused').click(() => {
