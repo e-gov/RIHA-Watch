@@ -28,11 +28,16 @@
       function alusta() {
         $('#SysteemideArv').click(() => {
           var u = 'https://apidemojatest.herokuapp.com/systeeme';
+          /* 
+            Vt https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch 
+          */
           fetch(u)
             .then(function (data) {
+              return response.json();
+            })
+            .then((minuJSON) => {  
               console.log('Andmed saadud');
-              var obj = JSON.parse(data);
-              $('#Tulemus').html('<p>RIHAs on kirjeldatud ' + obj.totalElements + 'süsteemi</p>');
+              $('#Tulemus').html('<p>RIHAs on kirjeldatud ' + minuJSON.totalElements + 'süsteemi</p>');
             })
             .catch(function (error) {
               console.log('Andmete saamine ebaõnnestus');
