@@ -18,7 +18,7 @@ app.set('view engine', 'ejs');
 
 // Esilehe kuvamine
 app.get('/', function (req, res) {
-  res.render('pages/index.ejs');
+  res.render('pages/index');
 });
 
 app.get('/systeeme', (req, res) => {
