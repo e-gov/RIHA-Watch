@@ -50,9 +50,9 @@ app.get('/avalikud', (req, res) => {
         console.log('Viga: ', error);
       }
       if (response) {
-        console.log('Staatus: ', response.statusCode);
+        console.log('Päring riigiteenused.ee-sse - staatus: ', response.statusCode);
         res.status(200)
-          .render('pages/salvestatud', body);
+          .send(body);
       }
   });
 });
