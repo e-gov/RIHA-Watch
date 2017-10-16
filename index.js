@@ -1,8 +1,6 @@
 'use strict';
 
 const express = require('express');
-const qs = require('query-string');
-// https://www.npmjs.com/package/query-string 
 const requestModule = require('request');
 require('request-debug')(requestModule);
 
@@ -23,25 +21,28 @@ app.get('/', function (req, res) {
   res.render('pages/index');
 });
 
-// Autentimispäringu saatmine
-app.get('/auth', (req, res) => {
-  // Generate a 16 character alpha-numeric token:
-  var token = uid(16);
-  var u = 'https://tara-test.ria.ee/oidc/authorize?' + qs.stringify({
-    redirect_uri: 'https://samategev.herokuapp.com/Callback',
-    scope: 'openid',
-    state: token,
-    response_type: 'code',
-    client_id: 'ParmaksonResearch'
-  });
-  console.log('autentimispäring: ', u);
-  res.redirect(u);
-});
-
-app.get('/Systeeme', (req, res) => {
+app.get('/systeeme', (req, res) => {
   console.log('*** Süsteeme? ***');
   requestModule({
     url: 'https://test.riha.ee/api/v1/systems',
+    method: 'GET'
+  },
+    (error, response, body) => {
+      if (error) {
+        console.log('Viga: ', error);
+      }
+      if (response) {
+        console.log('Staatus: ', response.statusCode);
+        res.status(200)
+          .render('pages/salvestatud', body);
+      }
+  });
+});
+
+app.get('/avalikud', (req, res) => {
+  console.log('*** Avalikke teenuseid? ***');
+  requestModule({
+    url: 'https://www.riigiteenused.ee/api/et/all',
     method: 'GET'
   },
     (error, response, body) => {

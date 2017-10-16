@@ -26,12 +26,12 @@
   <script>
     function alusta() {
       $('#SysteemideArv').click(() => {
-        $.getJSON('https://test.riha.ee/api/v1/systems', (data) => {
+        $.getJSON('https://apidemojatest/systeeme', (data) => {
           $('#Tulemus').html('<p>RIHAs on kirjeldatud ' + data.totalElements + 'süsteemi</p>');
         });
       });
       $('#Riigiteenused').click(() => {
-        $.getJSON('https://www.riigiteenused.ee/api/et/all', (data) => {
+        $.getJSON('https://apidemojatest/avalikud', (data) => {
           $('#Tulemus').html(data);
         });
       });
