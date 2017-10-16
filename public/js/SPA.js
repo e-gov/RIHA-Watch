@@ -14,11 +14,12 @@ function alusta() {
         $('#Tulemus1').html('<p>RIHAs on kirjeldatud ' +
         '<span class="Loendur">'  
         +  minuJSON.totalElements + '</span>' + ' süsteemi</p>');
+        $('#Kerija1').addClass('peidetud');
       })
       .catch(function (error) {
         console.log('Andmete saamine ebaõnnestus');
+        $('#Kerija1').addClass('peidetud');
       });
-      $('#Kerija1').addClass('peidetud');
     });
   $('#Riigiteenused').click(() => {
     var u = 'https://apidemojatest.herokuapp.com/avalikud';
