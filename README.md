@@ -1,6 +1,8 @@
-![Estonian Information System Authority](https://github.com/e-gov/RIHA-Frontend/raw/master/logo/gov-CVI/lions.png "Estonian Information System Authority") ![European Regional Development Fund](https://github.com/e-gov/RIHA-Frontend/raw/master/logo/EU/EU.png "European Regional Development Fund")
+## RIHA API demo
 
-## RIHA Visualiseerija / _RIHA-Visualizer_
-RIHA API-de andmeil põhinevad visuaalid / _Data visualisations built on RIHA API-s_
+RIHA API valmisoleku hinnang ja demo, võrdluse riigiteenused.ee API-ga.
+
+Demorakendus on tehtud NodeJS-s ja majutatud Herokus. Rakendus teeb paar lihtsat päringut nii RIHA kui ka riigiteenused.ee API-sse.
+
 
 
