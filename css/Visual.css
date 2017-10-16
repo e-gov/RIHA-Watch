@@ -1,0 +1,13 @@
+/* Keha */
+body { padding: 2rem 2rem 8rem 2rem; }
+
+/* Üldine font ja fondisuurus */
+body, textarea, input, legend {  
+  font-family: 'Times New Roman', serif !important;
+  font-size: 14pt !important;
+}
+
+button {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 24pt !important;
+}

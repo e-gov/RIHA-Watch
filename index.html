@@ -20,7 +20,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
   <!-- Stiilid -->
-  <link rel='stylesheet' href='css/Samas.css'>
+  <link rel='stylesheet' href='css/Visual.css'>
   <style></style>
 
   <!-- script src=''></script -->
@@ -28,7 +28,7 @@
   <script>
     function alusta() {
       $('#SysteemideArv').click(() => {
-        $getJSON('https://test.riha.ee/api/v1/systems', (data) => {
+        $.getJSON('https://test.riha.ee/api/v1/systems', (data) => {
           $('#Tulemus').html('<p>RIHAs on kirjeldatud ' + data.totalElements + 'süsteemi</p>');
         });
       });
