@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RIHA masinloetav</title>
+    <title>RIHA API demo</title>
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
@@ -21,6 +21,7 @@
 
     <!-- Stiilid -->
     <link rel='stylesheet' href='css/Visual.css'>
+    <link rel='stylesheet' href='css/font-awesome.min.css'>
 
     <script src='js/SPA.js'></script>
 
@@ -31,9 +32,9 @@
       <div class='row'>
         <div class='col-xs-12 col-sm-10 col-md-10 col-lg-8 col-xl-6'>
 
-          <h1>Masinloetava RIHA demo ja test</h1>
+          <h1>RIHA API demo</h1>
 
-          <p>võrdluses avalike teenuste kataloogiga</p>
+          <p>võrdluses avalike teenuste kataloogi riigiteenused.ee API-ga</p>
 
           <table class='table'>
             <thead>
@@ -119,23 +120,24 @@
                 <td>
                   <button id='SysteemideArv' type="button" class="btn btn-secondary">Süsteemide arv?</button>
                   <br>
+                  <p id='Kerija1' class='mx-auto peidetud'><i class="fa fa-cog fa-spin fa-3x fa-fw"></i></p>
+                  <p id='Tulemus1'></p>
                   <i class="ikoon material-icons ok">done</i>
                 </td>
                 <td>
                   <div id='ParinguValik' class='m-6'>
                     <button id='Riigiteenused' type="button" class="btn btn-secondary">Avalike teenuste arv?</button>
                     <br>
+                    <p id='Tulemus2'></p>
                     <i class="ikoon material-icons ok">done</i>
                   </div>
                 </td>
               </tr>
               <tr>
-                <th scope='row'>Vastus</th>
+                <th scope='row'></th>
                 <td>
-                  <p id='Tulemus1'></p>
                 </td>
                 <td>
-                  <p id='Tulemus2'></p>
                 </td>
               </tr>
             </tbody>
