@@ -1,8 +1,8 @@
 ## RIHA API demo
 
-RIHA API valmisoleku hinnang ja demo, võrdluse riigiteenused.ee API-ga.
+Rakendus teeb paar lihtsat päringut nii RIHA kui ka riigiteenused.ee API-sse.
 
-Demorakendus on tehtud NodeJS-s ja majutatud Herokus. Rakendus teeb paar lihtsat päringut nii RIHA kui ka riigiteenused.ee API-sse.
+Rakenduse serveriosa on tehtud NodeJS-s ja majutatud Herokus. 
 
 
 
