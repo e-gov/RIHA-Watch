@@ -13,8 +13,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" crossorigin="anonymous">
   <!-- Tether on vaja tooltip-de jaoks -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
@@ -50,6 +49,39 @@
         <h1>Masinloetav RIHA</h1>
 
         <p>RIHA masinloetavate andmete kasutamise demorakendus.</p>
+
+        <table class='table'>
+          <thead>
+            <tr>
+              <th></th>
+              <th>RIHA</th>
+              <th>Avalikud teenused</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope='row'>URL</th>
+              <td>https://test.riha.ee/api/v1</td>
+              <td>https://www.riigiteenused.ee/api</td>
+            </tr>
+            <tr>
+              <th scope='row'>kasutamine sirvija aadressirealt</th>
+              <td><a href='https://test.riha.ee/api/v1/systems' target="_new">https://test.riha.ee/api/v1/systems</a></td>
+              <td><a href='https://www.riigiteenused.ee/api/et/all' target='_new'>https://www.riigiteenused.ee/api/et/all</a></td>
+            </tr>
+            <tr>
+              <th scope='row'>API kirjeldus (masinloetav)</th>
+              <td>
+                <a href='https://github.com/e-gov/RIHA-Browser/blob/master/backend/src/main/resources/infosystem_schema.json'
+                  target="_new">https://github.com/e-gov/RIHA-Browser/blob/master/backend/src/main/resources/infosystem_schema.json</a>
+                  </td>
+              <td>
+                <a href='https://www.riigiteenused.ee/api/swagger-ui#' target='_new'>https://www.riigiteenused.ee/api/swagger-ui#</a>
+                <i class="ikoon material-icons">thumb_down</i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
         <div id='ParinguValik' class='m-6'>
           <button id='SysteemideArv' type="button" class="btn btn-secondary">Süsteemide arv?</button>

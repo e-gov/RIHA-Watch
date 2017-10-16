@@ -11,3 +11,7 @@ button {
   font-family: 'Roboto', sans-serif !important;
   font-size: 18pt !important;
 }
+
+.ikoon { font-family: 'Material Icons';
+  font-size: 48px;
+}
