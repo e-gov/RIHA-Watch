@@ -46,11 +46,11 @@
             <tbody>
               <tr>
                 <th scope='row'>1. API-l on selge, avalik, püsiv URL</th>
-                <td>https://test.riha.ee/api/v1
+                <td style='text-align: center;'>https://test.riha.ee/api/v1
                   <br>
                   <i class="ikoon material-icons ok">done</i>
                 </td>
-                <td>
+                <td style='text-align: center;'>
                   https://www.riigiteenused.ee/api
                   <br>
                   <i class="ikoon material-icons ok">done</i>
@@ -58,12 +58,12 @@
               </tr>
               <tr>
                 <th scope='row'>2. saab kasutada sirvija aadressirealt</th>
-                <td>
+                <td style='text-align: center;'>
                   <a href='https://test.riha.ee/api/v1/systems' target="_new">https://test.riha.ee/api/v1/systems</a>
                   <br>
                   <i class="ikoon material-icons ok">done</i>
                 </td>
-                <td>
+                <td style='text-align: center;'>
                   <a href='https://www.riigiteenused.ee/api/et/all' target='_new'>https://www.riigiteenused.ee/api/et/all</a>
                   <br>
                   <i class="ikoon material-icons ok">done</i>
@@ -71,7 +71,7 @@
               </tr>
               <tr>
                 <th scope='row'>3. API-l on masinloetav kirjeldus ja see on avalikult kättesaadav</th>
-                <td>
+                <td style='text-align: center;'>
                   <a href='https://raw.githubusercontent.com/e-gov/RIHA-Browser/master/backend/src/main/resources/static/swagger.yaml'
                     target='_new'>https://raw.githubusercontent.com/e-gov/RIHA-Browser/master/backend/src/main/resources/static/swagger.yaml</a>
                   (YAML)
@@ -81,34 +81,34 @@
                   (süntaks värvitult)
                   <br>
                   <a href='https://kertuhiire.github.io/RIHA-Help/' target='_new'>https://kertuhiire.github.io/RIHA-Help/</a> (Swagger ReDoc abil)
-                  <br>
+                  <br><br>
                   <i class="ikoon material-icons ok">done</i>
                 </td>
-                <td>
+                <td style='text-align: center;'>
                   <a href='https://www.riigiteenused.ee/api/swagger-ui#' target='_new'>https://www.riigiteenused.ee/api/swagger-ui#</a> (Swagger)
-                  <br>
+                  <br><br>
                   <i class="ikoon material-icons nok">cancel</i>
                 </td>
               </tr>
               <tr>
                 <th scope='row'>4. pakub korrektset JSON-it</th>
-                <td>
+                <td style='text-align: center;'>
                   <br>
                   <i class="ikoon material-icons ok">done</i>
                 </td>
-                <td>
+                <td style='text-align: center;'>
                   <br>
                   <i class="ikoon material-icons ok">done</i>
                 </td>
               </tr>
               <tr>
                 <th scope='row'>5. saab kasutada sirvija Javascript-is (AJAX)</th>
-                <td>
+                <td style='text-align: center;'>
                   Vaja CORS sisse lülitada
                   <br>
                   <i class="ikoon material-icons nok">cancel</i>
                 </td>
-                <td>
+                <td style='text-align: center;'>
                   Vaja CORS sisse lülitada
                   <br>
                   <i class="ikoon material-icons nok">cancel</i>
@@ -117,16 +117,14 @@
               <tr>
                 <th scope='row'>6. saab kasutada REST päringutega backend-i kaudu</th>
                 <td style='text-align: center;'>
-                  <button id='SysteemideArv' type="button" class="btn btn-secondary">Süsteemide arv?</button>
+                  <button id='SysteemideArv' type="button" class="btn btn-secondary m-3">Süsteemide arv?</button>
                   <br>
                   <p id='Tulemus1'></p>
                 </td>
                 <td style='text-align: center;'>
-                  <div id='ParinguValik' class='m-6'>
-                    <button id='Riigiteenused' type="button" class="btn btn-secondary">Avalike teenuste arv?</button>
-                    <br>
-                    <p id='Tulemus2'></p>
-                    <i class="ikoon material-icons ok">done</i>
+                  <button id='Riigiteenused' type="button" class="btn btn-secondary m-3">Avalike teenuste arv?</button>
+                  <br>
+                  <p id='Tulemus2'></p>
                   </div>
                 </td>
               </tr>
