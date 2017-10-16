@@ -32,6 +32,11 @@
           $('#Tulemus').html('<p>RIHAs on kirjeldatud ' + data.totalElements + 'süsteemi</p>');
         });
       });
+      $('#Riigiteenused').click(() => {
+        $.getJSON('https://www.riigiteenused.ee/api/et/all', (data) => {
+          $('#Tulemus').html(data);
+        });
+      });
     }
   </script>
 
@@ -46,10 +51,11 @@
 
         <p>RIHA masinloetavate andmete kasutamise demorakendus.</p>
 
-        <div id='ParinguValik'>
+        <div id='ParinguValik' class='m-6'>
           <button id='SysteemideArv' type="button" class="btn btn-secondary">Süsteemide arv?</button>
+          <button id='Riigiteenused' type="button" class="btn btn-secondary">Avalikud teenused</button>
         </div>
-        <div id='Tulemus'></div>
+        <div id='Tulemus' class='m-6'></div>
 
       </div>
     </div>
