@@ -1,135 +1,158 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RIHA masinloetav</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIHA masinloetav</title>
 
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
 
-  <!-- Material Design icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Material Design icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" crossorigin="anonymous">
-  <!-- Tether on vaja tooltip-de jaoks -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      crossorigin="anonymous">
+    <!-- Tether on vaja tooltip-de jaoks -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
-  <!-- Stiilid -->
-  <link rel='stylesheet' href='css/Visual.css'>
+    <!-- Stiilid -->
+    <link rel='stylesheet' href='css/Visual.css'>
 
-  <!-- script src=''></script -->
+    <!-- script src=''></script -->
 
-  <script>
-    function alusta() {
-      $('#SysteemideArv').click(() => {
-        $.get('https://apidemojatest/systeeme', (data, status) => {
-          $('#Tulemus').html('Andmed saadud');
-          // $('#Tulemus').html('<p>RIHAs on kirjeldatud ' + data.totalElements + 'süsteemi</p>');
+    <script>
+      function alusta() {
+        $('#SysteemideArv').click(() => {
+          var u = 'https://apidemojatest/systeeme';
+          fetch(url)
+            .then(function (data) {
+              console.log('Andmed saadud');
+            })
+            .catch(function (error) {
+              console.log('Andmete saamine ebaõnnestus');
+            });
+          return;
+
+          $.get(u, (data, status) => {
+            $('#Tulemus').html('Andmed saadud');
+            // $('#Tulemus').html('<p>RIHAs on kirjeldatud ' + data.totalElements + 'süsteemi</p>');
+          });
         });
-      });
-      $('#Riigiteenused').click(() => {
-        $.getJSON('https://apidemojatest/avalikud', (data) => {
-          $('#Tulemus').html(data);
+        $('#Riigiteenused').click(() => {
+          $.getJSON('https://apidemojatest/avalikud', (data) => {
+            $('#Tulemus').html(data);
+          });
         });
-      });
-    }
-  </script>
+      }
+    </script>
 
-</head>
+  </head>
 
-<body onload="alusta()">
-  <div class='container-fluid'>
-    <div class='row'>
-      <div class='col-xs-12 col-sm-10 col-md-10 col-lg-8 col-xl-6'>
+  <body onload="alusta()">
+    <div class='container-fluid'>
+      <div class='row'>
+        <div class='col-xs-12 col-sm-10 col-md-10 col-lg-8 col-xl-6'>
 
-        <h1>Masinloetava RIHA demo ja test</h1>
+          <h1>Masinloetava RIHA demo ja test</h1>
 
-        <p>võrdluses avalike teenuste kataloogiga</p>
+          <p>võrdluses avalike teenuste kataloogiga</p>
 
-        <table class='table'>
-          <thead>
-            <tr>
-              <th></th>
-              <th>RIHA</th>
-              <th>Avalikud teenused</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope='row'>1. API-l on selge, avalik, püsiv URL</th>
-              <td>https://test.riha.ee/api/v1<br>
-                <i class="ikoon material-icons ok">done</i>
-              </td>
-              <td>
-                https://www.riigiteenused.ee/api<br>
-                <i class="ikoon material-icons ok">done</i>
-              </td>
-            </tr>
-            <tr>
-              <th scope='row'>2. saab kasutada sirvija aadressirealt</th>
-              <td>
-                <a href='https://test.riha.ee/api/v1/systems' target="_new">https://test.riha.ee/api/v1/systems</a>
-                <br>
-                <i class="ikoon material-icons ok">done</i>
-              </td>
-              <td>
-                <a href='https://www.riigiteenused.ee/api/et/all' target='_new'>https://www.riigiteenused.ee/api/et/all</a>
-                <br>
-                <i class="ikoon material-icons ok">done</i>
-              </td>
-            </tr>
-            <tr>
-              <th scope='row'>3. API-l on masinloetav kirjeldus ja see on avalikult kättesaadav</th>
-              <td>
-                <a href='https://raw.githubusercontent.com/e-gov/RIHA-Browser/master/backend/src/main/resources/static/swagger.yaml' target='_new'>https://raw.githubusercontent.com/e-gov/RIHA-Browser/master/backend/src/main/resources/static/swagger.yaml</a>                (YAML)<br>
-                <a href='https://github.com/e-gov/RIHA-Browser/blob/master/backend/src/main/resources/infosystem_schema.json' target="_new">https://github.com/e-gov/RIHA-Browser/blob/master/backend/src/main/resources/infosystem_schema.json</a> (süntaks värvitult)<br>
-                <a href='https://kertuhiire.github.io/RIHA-Help/' target='_new'>https://kertuhiire.github.io/RIHA-Help/</a> (Swagger ReDoc abil)
-                <br>
-                <i class="ikoon material-icons ok">done</i>
-              </td>
-              <td>
-                <a href='https://www.riigiteenused.ee/api/swagger-ui#' target='_new'>https://www.riigiteenused.ee/api/swagger-ui#</a>                (Swagger)
-                <br>
-                <i class="ikoon material-icons nok">cancel</i>
-              </td>
-            </tr>
-            <tr>
-              <th scope='row'>4. saab kasutada sirvija Javascript-is (AJAX)</th>
-              <td>
-                Vaja CORS sisse lülitada<br>
-                <i class="ikoon material-icons nok">cancel</i>
-              </td>
-              <td>
-                Vaja CORS sisse lülitada<br>
-                <i class="ikoon material-icons nok">cancel</i>
-              </td>
-            </tr>
-            <tr>
-              <th scope='row'>5. saab kasutada REST päringutega backend-i kaudu</th>
-              <td>
-                <button id='SysteemideArv' type="button" class="btn btn-secondary">Süsteemide arv?</button><br>
-                <i class="ikoon material-icons ok">done</i>
-              </td>
-              <td>
-                <div id='ParinguValik' class='m-6'>
-                  <button id='Riigiteenused' type="button" class="btn btn-secondary">Avalike teenuste arv?</button><br>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th></th>
+                <th>RIHA</th>
+                <th>Avalikud teenused</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope='row'>1. API-l on selge, avalik, püsiv URL</th>
+                <td>https://test.riha.ee/api/v1
+                  <br>
                   <i class="ikoon material-icons ok">done</i>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                </td>
+                <td>
+                  https://www.riigiteenused.ee/api
+                  <br>
+                  <i class="ikoon material-icons ok">done</i>
+                </td>
+              </tr>
+              <tr>
+                <th scope='row'>2. saab kasutada sirvija aadressirealt</th>
+                <td>
+                  <a href='https://test.riha.ee/api/v1/systems' target="_new">https://test.riha.ee/api/v1/systems</a>
+                  <br>
+                  <i class="ikoon material-icons ok">done</i>
+                </td>
+                <td>
+                  <a href='https://www.riigiteenused.ee/api/et/all' target='_new'>https://www.riigiteenused.ee/api/et/all</a>
+                  <br>
+                  <i class="ikoon material-icons ok">done</i>
+                </td>
+              </tr>
+              <tr>
+                <th scope='row'>3. API-l on masinloetav kirjeldus ja see on avalikult kättesaadav</th>
+                <td>
+                  <a href='https://raw.githubusercontent.com/e-gov/RIHA-Browser/master/backend/src/main/resources/static/swagger.yaml'
+                    target='_new'>https://raw.githubusercontent.com/e-gov/RIHA-Browser/master/backend/src/main/resources/static/swagger.yaml</a>
+                  (YAML)
+                  <br>
+                  <a href='https://github.com/e-gov/RIHA-Browser/blob/master/backend/src/main/resources/infosystem_schema.json'
+                    target="_new">https://github.com/e-gov/RIHA-Browser/blob/master/backend/src/main/resources/infosystem_schema.json</a>
+                  (süntaks värvitult)
+                  <br>
+                  <a href='https://kertuhiire.github.io/RIHA-Help/' target='_new'>https://kertuhiire.github.io/RIHA-Help/</a> (Swagger ReDoc abil)
+                  <br>
+                  <i class="ikoon material-icons ok">done</i>
+                </td>
+                <td>
+                  <a href='https://www.riigiteenused.ee/api/swagger-ui#' target='_new'>https://www.riigiteenused.ee/api/swagger-ui#</a> (Swagger)
+                  <br>
+                  <i class="ikoon material-icons nok">cancel</i>
+                </td>
+              </tr>
+              <tr>
+                <th scope='row'>4. saab kasutada sirvija Javascript-is (AJAX)</th>
+                <td>
+                  Vaja CORS sisse lülitada
+                  <br>
+                  <i class="ikoon material-icons nok">cancel</i>
+                </td>
+                <td>
+                  Vaja CORS sisse lülitada
+                  <br>
+                  <i class="ikoon material-icons nok">cancel</i>
+                </td>
+              </tr>
+              <tr>
+                <th scope='row'>5. saab kasutada REST päringutega backend-i kaudu</th>
+                <td>
+                  <button id='SysteemideArv' type="button" class="btn btn-secondary">Süsteemide arv?</button>
+                  <br>
+                  <i class="ikoon material-icons ok">done</i>
+                </td>
+                <td>
+                  <div id='ParinguValik' class='m-6'>
+                    <button id='Riigiteenused' type="button" class="btn btn-secondary">Avalike teenuste arv?</button>
+                    <br>
+                    <i class="ikoon material-icons ok">done</i>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
 
-        <div id='Tulemus' class='m-6'></div>
+          <div id='Tulemus' class='m-6'></div>
 
+        </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 
 </html>

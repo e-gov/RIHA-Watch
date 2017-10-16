@@ -22,7 +22,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/systeeme', (req, res) => {
-  res.send('Kes teab?');
+  res.status(200).send('Kes teab?');
   return
   console.log('*** Süsteeme? ***');
   requestModule({
