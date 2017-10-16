@@ -22,35 +22,7 @@
     <!-- Stiilid -->
     <link rel='stylesheet' href='css/Visual.css'>
 
-    <!-- script src=''></script -->
-
-    <script>
-      function alusta() {
-        $('#SysteemideArv').click(() => {
-          var u = 'https://apidemojatest.herokuapp.com/systeeme';
-          /* 
-            Vt https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch 
-          */
-          fetch(u)
-            .then(function (response) {
-              return response.json();
-            })
-            .then((minuJSON) => {  
-              console.log('Andmed saadud');
-              $('#Tulemus').html('<p>RIHAs on kirjeldatud ' + minuJSON.totalElements + 'süsteemi</p>');
-            })
-            .catch(function (error) {
-              console.log('Andmete saamine ebaõnnestus');
-            });
-          return;
-        });
-        $('#Riigiteenused').click(() => {
-          $.getJSON('https://apidemojatest.herokuapp.com/avalikud', (data) => {
-            $('#Tulemus').html(data);
-          });
-        });
-      }
-    </script>
+    <script src='js/SPA,js'></script>
 
   </head>
 
@@ -146,11 +118,19 @@
                   </div>
                 </td>
               </tr>
+              <tr>
+                <th scope='row'>Vastus</th>
+                <td>
+                  <p id='Tulemus1'></p>
+                </td>
+                <td>
+                  <p id='Tulemus2'></p>
+                </td>
+              </tr>
             </tbody>
           </table>
 
 
-          <div id='Tulemus' class='m-6'></div>
 
         </div>
       </div>
