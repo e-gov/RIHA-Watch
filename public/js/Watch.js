@@ -13,6 +13,26 @@ function teeDiagramm() {
       console.log(tulbad);
       $('#Tulemus').html(tulbad.toString());
       // Tee diagramm
+      let data = {
+        labels: ["täna", "eile", "...", "...",
+          "...", "...", "...", "...", "...", "..."],
+    
+        datasets: [
+          {
+            title: "Uuendamisi päevas", color: "tomato",
+            values: tulbad
+          }
+        ]
+      };
+    
+      let chart = new Chart({
+        parent: "#Diagramm",
+        title: "Aktiivsus",
+        data: data,
+        type: 'bar',
+        height: 250
+      });
+      
     })
     .catch(error => {
       console.log('Andmete saamine ebaõnnestus');
