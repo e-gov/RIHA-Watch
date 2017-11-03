@@ -3,31 +3,7 @@ body { padding: 2rem 2rem 8rem 2rem; }
 
 /* Üldine font ja fondisuurus */
 body, textarea, input, legend {  
-  font-family: 'Segoe UI', serif !important;
-  font-size: 12pt !important;
+  font-family: 'Anonymous Pro', serif !important;
+  font-size: 13pt !important;
 }
 
-button {
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 14pt !important;
-}
-
-.ikoon { font-family: 'Material Icons';
-  font-size: 48px;
-}
-
-.ok { color: green; }
-.nok { color: Tomato; }
-
-.Loendur {
-  border: 1px dotted Tomato;
-  color: Tomato;
-  border-radius: 4px;
-  padding: 4px;
-  font-family: 'Courier New', monospace;
-  font-size: 14pt;
-}
-
-.peidetud {
-  display: none;
-}

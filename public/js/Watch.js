@@ -11,7 +11,7 @@ function teeDiagramm() {
       console.log('Andmed saadud');
       var tulbad = tabuleeriAndmed(saadudJSON.content);
       console.log(tulbad);
-      $('#Tulemus').html('Andmed saadud');
+      $('#Tulemus').html(tulbad.toString());
       // Tee diagramm
     })
     .catch(error => {
