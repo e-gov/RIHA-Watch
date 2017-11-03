@@ -7,3 +7,22 @@ body, textarea, input, legend {
   font-size: 13pt !important;
 }
 
+.ikoon { font-family: 'Material Icons';
+  font-size: 48px;
+}
+
+.ok { color: green; }
+.nok { color: Tomato; }
+
+.Loendur {
+  border: 1px dotted Tomato;
+  color: Tomato;
+  border-radius: 4px;
+  padding: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 14pt;
+}
+
+.peidetud {
+  display: none;
+}

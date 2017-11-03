@@ -19,7 +19,7 @@ function teeDiagramm() {
     
         datasets: [
           {
-            title: "Uuendamisi päevas", color: "gray",
+            title: "Uuendamisi päevas", color: "light-blue",
             values: tulbad
           }
         ]
@@ -32,7 +32,8 @@ function teeDiagramm() {
         type: 'bar',
         height: 250
       });
-      
+
+      $('#Teade').addClass('peidetud');
     })
     .catch(error => {
       console.log('Andmete saamine ebaõnnestus');
