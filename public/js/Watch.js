@@ -19,7 +19,7 @@ function teeDiagramm() {
     
         datasets: [
           {
-            title: "Uuendamisi päevas", color: "tomato",
+            title: "Uuendamisi päevas", color: "gray",
             values: tulbad
           }
         ]
@@ -27,7 +27,7 @@ function teeDiagramm() {
     
       let chart = new Chart({
         parent: "#Diagramm",
-        title: "Aktiivsus",
+        title: "Uuendamisi päevas",
         data: data,
         type: 'bar',
         height: 250
