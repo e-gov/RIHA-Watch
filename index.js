@@ -21,6 +21,10 @@ app.get('/', function (req, res) {
   res.render('pages/index');
 });
 
+app.get('/watch', function (req, res) {
+  res.render('pages/watch');
+});
+
 app.get('/systeeme', (req, res) => {
   console.log('*** Süsteeme? Päring RIHAsse... ***');
   requestModule({
@@ -39,7 +43,7 @@ app.get('/systeeme', (req, res) => {
   });
 });
 
-app.get('/vaatleja', (req, res) => {
+app.get('/koik', (req, res) => {
   console.log('*** Vaatleja päring RIHAsse... ***');
   requestModule({
     url: 'https://riha.ee/api/v1/systems?size=2000',

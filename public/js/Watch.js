@@ -3,7 +3,7 @@ function teeDiagramm() {
     Fetch annab esimeses .then klauslis ainult response objekti. See ei sisalda veel andmeid. Andmete lugemiseks kasutame json() meetodit, see on asünkroonne. Kahe .then-klausli aheldamine.
     Vt https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch 
   */
-  fetch('https://apidemojatest.herokuapp.com/vaatleja')
+  fetch('https://apidemojatest.herokuapp.com/koik')
     .then(function (response) {
       return response.json();
     })
@@ -11,6 +11,7 @@ function teeDiagramm() {
       console.log('Andmed saadud');
       var tulbad = tabuleeriAndmed(saadudJSON.content);
       console.log(tulbad);
+      $('#Tulemus').html('Andmed saadud');
       // Tee diagramm
     })
     .catch(error => {
