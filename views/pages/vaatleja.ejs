@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIHA Vaatleja</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+
+    <!-- Material Design icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      crossorigin="anonymous">
+    <!-- Tether on vaja tooltip-de jaoks -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <!-- Frappe Charts https://github.com/frappe/charts -->
+    <script src="https://raw.githubusercontent.com/frappe/charts/master/dist/frappe-charts.min.js"></script>
+
+    <!-- Stiilid -->
+    <link rel='stylesheet' href='css/Visual.css'>
+
+    <script src='js/Vaatleja.js'></script>
+
+  </head>
+
+  <body onload="teeDiagramm()">
+    <div class='container-fluid'>
+      <div class='row'>
+        <div class='col-xs-12 col-sm-10 col-md-10 col-lg-8 col-xl-6'>
+
+          <h1>RIHA Vaatleja</h1>
+
+          <p id='Tulemus'></p>
+
+        </div>
+      </div>
+
+      <% include ../partials/jalus.ejs %>
+      
+    </div>
+  </body>
+
+</html>

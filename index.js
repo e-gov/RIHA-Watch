@@ -39,6 +39,24 @@ app.get('/systeeme', (req, res) => {
   });
 });
 
+app.get('/vaatleja', (req, res) => {
+  console.log('*** Vaatleja päring RIHAsse... ***');
+  requestModule({
+    url: 'https://riha.ee/api/v1/systems?size=2000',
+    method: 'GET'
+  },
+    (error, response, body) => {
+      if (error) {
+        console.log('Viga: ', error);
+      }
+      if (response) {
+        console.log('Päring RIHAsse - staatus: ', response.statusCode);
+        res.status(200)
+          .send(body);
+      }
+  });
+});
+
 app.get('/avalikud', (req, res) => {
   console.log('*** Avalikke teenuseid? ***');
   requestModule({
