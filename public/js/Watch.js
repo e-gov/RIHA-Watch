@@ -47,7 +47,7 @@ function tabuleeriAndmed(json) {
     s.push(0);
   }
   json.forEach(systeem => {
-    var t = Date.parse(systeem.details.meta.creation_timestamp);
+    var t = Date.parse(systeem.details.meta.update_timestamp);
     var dd = Math.ceil((n - t) / (24 * 60 * 60 * 1000));
     // console.log(dd);
     if (dd < 10) {
