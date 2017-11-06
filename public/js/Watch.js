@@ -1,4 +1,44 @@
-function teeDiagramm() {
+var andmetabel = [];
+
+function genereeriKuupaevad(n) {
+  /*
+    Genereerib massiivi n viimase kuupäevaga (kuupäev.kuu vormingus), alates tänasest.
+  */
+  var tana = new Date();
+  for (var i = 0; i < 10; i++) {
+    var kp =
+      tana.getDate().toString() + '.' +
+      (tana.getMonth() + 1).toString();
+    andmetabel.push({
+      kp: kp,
+      loodud: 0,
+      uuendatud: 0
+    });
+    tana.setDate(tana.getDate() - 1);
+  }
+}
+
+function tabuleeriAndmed(json) {
+  /*
+    Läbib JSON-struktuuri json, täites massiivi andmetabel.
+  */
+  var praegu = new Date();
+  json.forEach(systeem => {
+    var ct = Date.parse(systeem.details.meta.creation_timestamp);
+    var ut = Date.parse(systeem.details.meta.update_timestamp);
+    const paevaPikkus = 24 * 60 * 60 * 1000;
+    var paeviLoomisest = Math.ceil((praegu - ct) / paevaPikkus);
+    var paeviUuendamisest = Math.ceil((praegu - ut) / paevaPikkus);
+    if (paeviLoomisest < 10) {
+      andmetabel[paeviLoomisest].loodud++;
+    }
+    if (paeviUuendamisest < 10) {
+      andmetabel[paeviUuendamisest].uuendatud++;
+    }
+  });
+}
+
+function laeAndmedTeeDiagramm() {
   /*
     Fetch annab esimeses .then klauslis ainult response objekti. See ei sisalda veel andmeid. Andmete lugemiseks kasutame json() meetodit, see on asünkroonne. Kahe .then-klausli aheldamine.
     Vt https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch 
@@ -7,52 +47,40 @@ function teeDiagramm() {
     .then(function (response) {
       return response.json();
     })
-    .then(saadudJSON => {  
-      console.log('Andmed saadud');
-      var tulbad = tabuleeriAndmed(saadudJSON.content);
-      console.log(tulbad);
-      $('#Tulemus').html(tulbad.toString());
-      // Tee diagramm
-      let data = {
-        labels: ["täna", "eile", "...", "...",
-          "...", "...", "...", "...", "...", "..."],
-    
-        datasets: [
-          {
-            title: "Uuendamisi päevas", color: "light-blue",
-            values: tulbad
-          }
-        ]
-      };
-    
-      let chart = new Chart({
-        parent: "#Diagramm",
-        title: "Uuendamisi päevas",
-        data: data,
-        type: 'bar',
-        height: 250
-      });
-
+    .then(saadudJSON => {
       $('#Teade').addClass('peidetud');
+      console.log('Andmed saadud');
+      tabuleeriAndmed(saadudJSON.content);
+      joonistaDiagramm();
     })
     .catch(error => {
       console.log('Andmete saamine ebaõnnestus');
     });
 }
 
-function tabuleeriAndmed(json) {
-  var n = Date.now();
-  var s = [];
-  for (var i = 0; i < 10; i++) {
-    s.push(0);
-  }
-  json.forEach(systeem => {
-    var t = Date.parse(systeem.details.meta.update_timestamp);
-    var dd = Math.ceil((n - t) / (24 * 60 * 60 * 1000));
-    // console.log(dd);
-    if (dd < 10) {
-      s[dd] = s[dd] + 1;
-    }
+function joonistaDiagramm() {
+  // Moodusta Google Charts andmetabel.
+  var data = new google.visualization.DataTable();
+  data.addColumn('string', 'Kp');
+  data.addColumn('number', 'Uusi');
+  data.addColumn('number', 'Uuendatud');
+  andmetabel.forEach( rida => {
+    data.addRow([rida.kp, rida.loodud, rida.uuendatud]);
   });
-  return s;
+  // Set chart options
+  var options = {
+    'title': 'Infosüsteeme',
+    'width': 400,
+    'height': 300
+  };
+
+  // Instantiate and draw our chart, passing in some options.
+  var chart = new google.visualization.ColumnChart(document.getElementById('Diagramm'));
+  chart.draw(data, options);
+}
+
+function alusta() {
+  genereeriKuupaevad();
+  google.charts.load('current', { 'packages': ['corechart'] });
+  google.charts.setOnLoadCallback(laeAndmedTeeDiagramm);
 }
