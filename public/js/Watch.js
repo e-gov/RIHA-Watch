@@ -70,9 +70,11 @@ function joonistaDiagramm() {
   // Set chart options
   var options = {
     'title': 'Infosüsteeme',
+    'fontName': 'AnonymousPro',
     'width': 600,
     'height': 300,
-    isStacked: true
+    'legend': { 'position': 'top', 'maxLines': 3 },
+    'isStacked': true
   };
 
   // Instantiate and draw our chart, passing in some options.
