@@ -71,10 +71,12 @@ function joonistaDiagramm() {
   var options = {
     'title': 'Infosüsteeme',
     'fontName': 'AnonymousPro',
-    'width': 600,
+    'fontSize': 13,
+    'width': 800,
     'height': 300,
     'legend': { 'position': 'top', 'maxLines': 3 },
-    'isStacked': true
+    'isStacked': true,
+    'series': [ { color: 'tomato' }, { color: 'khaki'} ]
   };
 
   // Instantiate and draw our chart, passing in some options.
