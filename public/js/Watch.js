@@ -70,8 +70,9 @@ function joonistaDiagramm() {
   // Set chart options
   var options = {
     'title': 'Infosüsteeme',
-    'width': 400,
-    'height': 300
+    'width': 600,
+    'height': 300,
+    isStacked: true
   };
 
   // Instantiate and draw our chart, passing in some options.
