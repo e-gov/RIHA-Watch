@@ -76,12 +76,16 @@ function joonistaDiagramm() {
     'height': 300,
     'legend': { 'position': 'top', 'maxLines': 3 },
     'isStacked': true,
-    'series': [ { color: 'tomato' }, { color: 'khaki'} ]
+    'series': [{ color: 'tomato' }, { color: 'khaki' }],
+    'tooltip': { 'trigger': 'selection' }
   };
 
   // Instantiate and draw our chart, passing in some options.
   var chart = new google.visualization.ColumnChart(document.getElementById('Diagramm'));
   chart.draw(data, options);
+  google.visualization.events.addListener(chart, 'select', () => {
+    console.log(chart.getSelection().toString());
+  });
 }
 
 function alusta() {
