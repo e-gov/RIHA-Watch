@@ -84,7 +84,8 @@ function joonistaDiagramm() {
   var chart = new google.visualization.ColumnChart(document.getElementById('Diagramm'));
   chart.draw(data, options);
   google.visualization.events.addListener(chart, 'select', () => {
-    console.log(chart.getSelection().toString());
+    var lahter = chart.getSelection()[0];
+    $('#Detailid').html(lahter.row.toString() + ' ' + lahter.column.toString());
   });
 }
 
