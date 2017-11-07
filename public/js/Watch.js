@@ -35,11 +35,11 @@ function tabuleeriAndmed(json) {
     var paeviUuendamisest = Math.ceil((praegu - ut) / paevaPikkus);
     if (paeviLoomisest < 10) {
       andmetabel[paeviLoomisest].loodud++;
-      lNimed[paeviLoomisest] = lNimed[paeviLoomisest] + systeem.details.name + ' ' + systeem.details.short_name + '; ';
+      lNimed[paeviLoomisest] = lNimed[paeviLoomisest] + systeem.details.name + ' ' + systeem.details.short_name + '<br>';
     }
     if (paeviUuendamisest < 10) {
       andmetabel[paeviUuendamisest].uuendatud++;
-      uNimed[paeviUuendamisest] = uNimed[paeviUuendamisest] + systeem.details.name + ' ' + systeem.details.short_name + '; ';
+      uNimed[paeviUuendamisest] = uNimed[paeviUuendamisest] + systeem.details.name + ' ' + systeem.details.short_name + '<br>';
     }
   });
 }
@@ -76,6 +76,11 @@ function joonistaDiagramm() {
   // Set chart options
   var options = {
     'title': 'Infosüsteeme',
+    'titleTextStyle': {
+      'fontName': 'AnonymousPro',
+      'fontSize': 18,
+      'bold': false
+    },
     'fontName': 'AnonymousPro',
     'fontSize': 13,
     'width': 800,
@@ -97,7 +102,7 @@ function joonistaDiagramm() {
     var lahter = chart.getSelection()[0];
     var r = lahter.row;
     var c = lahter.column;
-    if (c == 1) {
+    if (c == 2) {
       $('#Detailid').html(uNimed[r]);
     } else {
       $('#Detailid').html(lNimed[r]);
