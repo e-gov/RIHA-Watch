@@ -1,8 +1,10 @@
 var andmetabel = [];
+var lNimed = []; // Loodud süsteemide nimed
+var uNimed = []; // Uuendatud süsteemide nimed
 
 function genereeriKuupaevad(n) {
   /*
-    Genereerib massiivi n viimase kuupäevaga (kuupäev.kuu vormingus), alates tänasest.
+    Genereerib massiivi n viimase kuupäevaga (kuupäev.kuu vormingus), alates tänasest. Samuti algväärtustab massiivid lNimed ja uNimed.
   */
   var tana = new Date();
   for (var i = 0; i < 10; i++) {
@@ -15,6 +17,8 @@ function genereeriKuupaevad(n) {
       uuendatud: 0
     });
     tana.setDate(tana.getDate() - 1);
+    lNimed.push('');
+    uNimed.push('');
   }
 }
 
@@ -31,9 +35,11 @@ function tabuleeriAndmed(json) {
     var paeviUuendamisest = Math.ceil((praegu - ut) / paevaPikkus);
     if (paeviLoomisest < 10) {
       andmetabel[paeviLoomisest].loodud++;
+      lNimed[paeviLoomisest] = lNimed[paeviLoomisest] + systeem.details.name + ' ' + systeem.details.short_name + '; ';
     }
     if (paeviUuendamisest < 10) {
       andmetabel[paeviUuendamisest].uuendatud++;
+      uNimed[paeviUuendamisest] = uNimed[paeviUuendamisest] + systeem.details.name + ' ' + systeem.details.short_name + '; ';
     }
   });
 }
@@ -74,7 +80,11 @@ function joonistaDiagramm() {
     'fontSize': 13,
     'width': 800,
     'height': 300,
-    'legend': { 'position': 'top', 'maxLines': 3 },
+    'legend': {
+      'position': 'top',
+      'maxLines': 3,
+      'fontSize': 13
+    },
     'isStacked': true,
     'series': [{ color: 'tomato' }, { color: 'khaki' }],
     'tooltip': { 'trigger': 'selection' }
@@ -85,7 +95,13 @@ function joonistaDiagramm() {
   chart.draw(data, options);
   google.visualization.events.addListener(chart, 'select', () => {
     var lahter = chart.getSelection()[0];
-    $('#Detailid').html(lahter.row.toString() + ' ' + lahter.column.toString());
+    var r = lahter.row;
+    var c = lahter.column;
+    if (c == 1) {
+      $('#Detailid').html(uNimed[r]);
+    } else {
+      $('#Detailid').html(lNimed[r]);
+    }
   });
 }
 
