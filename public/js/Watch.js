@@ -39,7 +39,10 @@ function tabuleeriAndmed(json) {
     }
     if (paeviUuendamisest < 10) {
       andmetabel[paeviUuendamisest].uuendatud++;
-      uNimed[paeviUuendamisest] = uNimed[paeviUuendamisest] + systeem.details.name + ' / ' + systeem.details.short_name + '<br>';
+      uNimed[paeviUuendamisest] = uNimed[paeviUuendamisest] +
+        '<a href="https://www.riha.ee/Infosüsteemid/Vaata/' +
+        systeem.details.short_name + '">' +  
+        systeem.details.name + '</a>' + '<br>';
     }
   });
 }
