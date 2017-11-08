@@ -94,7 +94,7 @@ function joonistaDiagramm() {
       'fontSize': 13
     },
     'isStacked': true,
-    'series': [{ color: 'tomato' }, { color: 'khaki' }],
+    'series': [{ color: 'blue' }, { color: 'springgreen' }],
     'tooltip': { 'trigger': 'selection' }
   };
 
