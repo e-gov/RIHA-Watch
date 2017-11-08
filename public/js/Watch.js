@@ -41,7 +41,7 @@ function tabuleeriAndmed(json) {
       andmetabel[paeviUuendamisest].uuendatud++;
       uNimed[paeviUuendamisest] = uNimed[paeviUuendamisest] +
         '<a href="https://www.riha.ee/Infosüsteemid/Vaata/' +
-        systeem.details.short_name + '">' +  
+        systeem.details.short_name + '" target="_new">' +  
         systeem.details.name + '</a>' + '<br>';
     }
   });
