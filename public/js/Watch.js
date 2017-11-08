@@ -31,8 +31,8 @@ function tabuleeriAndmed(json) {
     var ct = Date.parse(systeem.details.meta.creation_timestamp);
     var ut = Date.parse(systeem.details.meta.update_timestamp);
     const paevaPikkus = 24 * 60 * 60 * 1000;
-    var paeviLoomisest = Math.ceil((praegu - ct) / paevaPikkus);
-    var paeviUuendamisest = Math.ceil((praegu - ut) / paevaPikkus);
+    var paeviLoomisest = Math.floor((praegu - ct) / paevaPikkus);
+    var paeviUuendamisest = Math.floor((praegu - ut) / paevaPikkus);
     if (paeviLoomisest < 10) {
       andmetabel[paeviLoomisest].loodud++;
       lNimed[paeviLoomisest] = lNimed[paeviLoomisest] + systeem.details.name + ' ' + systeem.details.short_name + '<br>';
