@@ -1,0 +1,811 @@
+{
+  "totalElements": 1674,
+  "content": [
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10004252",
+          "name": "AS SEB Pank"
+        },
+        "purpose": "AS SEB Pank tegevuseks vajalike X-Tee päringute teostamine",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/as_seb_pank_x-tee_alamsusteem"
+          },
+          {
+            "name": "xtee_nouetele_vastavuse_kinnitus_SEB_Pank.asice",
+            "url": "file://30bfa27a-7428-d1d2-2e56-0f321f355c57"
+          }
+        ],
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": {
+            "status": null,
+            "timestamp": null
+          },
+          "update_timestamp": "2017-10-10T10:10:12Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": null
+          },
+          "creation_timestamp": "2017-10-02T11:57:07Z",
+          "development_status": null
+        },
+        "name": "AS SEB Pank X-tee alamsüsteem",
+        "short_name": "10004252-sebpank",
+        "data_files": null,
+        "uuid": "279dde01-6d20-e357-d56b-0179851b33ed",
+        "legislations": null,
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10011039",
+          "name": "OLYMPIC CASINO EESTI AS"
+        },
+        "purpose": "Võimaldada hasartmängukorraldaja aruandlus Maksu- ja Tolliametile X-tee v6 kaudu",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/olympic_casino_eesti_as_ehma_x-tee_alamsusteem"
+          }
+        ],
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": {
+            "status": null,
+            "timestamp": null
+          },
+          "update_timestamp": "2017-03-13T14:52:18Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": null
+          },
+          "creation_timestamp": "2017-02-28T17:07:58Z",
+          "development_status": null
+        },
+        "name": "Olympic Casino Eesti AS EHMA X-tee alamsüsteem",
+        "short_name": "10011039-ehma",
+        "data_files": null,
+        "uuid": "37546cd7-9b27-60c8-9d97-f3e96f264b3f",
+        "legislations": null,
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10011039",
+          "name": "OLYMPIC CASINO EESTI AS"
+        },
+        "purpose": "Hasartmängu mängimisega piirangutega isikute nimekirja (HAMPI) X-tee teenuse kasutamine",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/olympic_casino_eesti_as_hampi_x-tee_alamsusteem"
+          }
+        ],
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": {
+            "status": null,
+            "timestamp": null
+          },
+          "update_timestamp": "2017-03-13T14:54:40Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": null
+          },
+          "creation_timestamp": "2017-03-03T16:42:54Z",
+          "development_status": null
+        },
+        "name": "Olympic Casino Eesti AS HAMPI X-tee alamsüsteem",
+        "short_name": "10011039-hampi",
+        "data_files": null,
+        "uuid": "879c1d10-29d9-d6c1-5cf3-6f4a234ab037",
+        "legislations": null,
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10015238",
+          "name": "Alexela Energia AS"
+        },
+        "purpose": "Infosüsteemi andmed on juurdepääsupiiranguga",
+        "documents": null,
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": null,
+          "update_timestamp": "2017-07-20T10:03:47Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": null
+          },
+          "creation_timestamp": "2017-06-28T18:45:05Z",
+          "development_status": null
+        },
+        "name": "10015238-alexelaenergia",
+        "short_name": "10015238-alexelaenergia",
+        "data_files": null,
+        "uuid": "7bc81301-1a8a-f980-45c7-c0609f7db87b",
+        "legislations": null,
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10017059",
+          "name": "Aktsiaselts PAFER"
+        },
+        "purpose": "Hasartmängukorraldaja aruandluse võimaldamine Maksu- ja Tolliametile",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/aktsiaselts_pafer_elektrooniline_arvestus-_ja_kontrollsusteem/4"
+          }
+        ],
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": {
+            "status": null,
+            "timestamp": null
+          },
+          "update_timestamp": "2017-05-08T16:27:50Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": "2017-01-02T00:00:00Z"
+          },
+          "creation_timestamp": "2016-12-26T11:12:56Z",
+          "development_status": null
+        },
+        "name": "Aktsiaselts PAFER elektrooniline arvestus- ja kontrollsüsteem",
+        "short_name": "10017059-ehma4",
+        "data_files": null,
+        "uuid": "ca192f19-b45d-5d07-2b9a-852ce7b54b7b",
+        "legislations": [
+          {
+            "name": "Hasartmänguseadus",
+            "url": "https://www.riigiteataja.ee/akt/106122016008?leiaKehtiv"
+          }
+        ],
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10017059",
+          "name": "Aktsiaselts PAFER"
+        },
+        "purpose": "Hasartmängu mängimisega piirangutega isikute nimekirja (HAMPI) X-tee teenuse kasutamine",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/hasartmangu_mangimise_piirangutega_isikute_nimekiri"
+          }
+        ],
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": {
+            "status": null,
+            "timestamp": null
+          },
+          "update_timestamp": "2017-04-20T10:33:01Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": null
+          },
+          "creation_timestamp": "2017-03-23T16:09:07Z",
+          "development_status": null
+        },
+        "name": "Aktsiaselts Pafer HAMPI X-tee alamsüsteem",
+        "short_name": "10017059-hampi",
+        "data_files": null,
+        "uuid": "e3cb3092-a1bd-bf7a-e08b-c8bf514df0e9",
+        "legislations": null,
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10030278",
+          "name": "Saku Õlletehase Aktsiaselts"
+        },
+        "purpose": "Andmevahetus EMTA'ga",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/csap"
+          }
+        ],
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": {
+            "status": null,
+            "timestamp": null
+          },
+          "update_timestamp": "2017-05-05T15:55:08Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": "2017-04-19T00:00:00Z"
+          },
+          "creation_timestamp": "2017-04-19T11:10:47Z",
+          "development_status": null
+        },
+        "name": "CarlsbergSAP",
+        "short_name": "10030278-csap",
+        "data_files": null,
+        "uuid": "a685a878-c866-41f1-bff8-433269fc6ffa",
+        "legislations": null,
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10034247",
+          "name": "aktsiaselts A. Le Coq"
+        },
+        "purpose": "Andmevahetus EMTA-ga",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/alcx"
+          }
+        ],
+        "topics": null,
+        "meta": {
+          "x_road_status": {
+            "status": "JOINED",
+            "timestamp": "2017-05-30T00:00:00Z"
+          },
+          "update_timestamp": "2017-07-13T17:15:52Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": "2017-05-30T00:00:00Z"
+          },
+          "creation_timestamp": "2017-05-30T11:55:35Z",
+          "development_status": null
+        },
+        "name": "ALCX",
+        "short_name": "10034247-alcx",
+        "data_files": null,
+        "uuid": "338ee822-2dda-0dbd-cdf0-fcd271c1887d",
+        "legislations": null,
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10044777",
+          "name": "aktsiaselts Sanatoorium Tervis"
+        },
+        "purpose": "Infosüsteemi andmed on juurdepääsupiiranguga",
+        "documents": null,
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": null,
+          "update_timestamp": "2017-06-09T14:38:24Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": null
+          },
+          "creation_timestamp": "2017-06-06T14:16:41Z",
+          "development_status": null
+        },
+        "name": "10044777-virosoft",
+        "short_name": "10044777-virosoft",
+        "data_files": null,
+        "uuid": "de5c9603-ce00-feae-c093-ce0025dbad6b",
+        "legislations": null,
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10050157",
+          "name": "aktsiaselts \"Põlva Haigla\""
+        },
+        "purpose": "Põlva Haigla infosüsteem Ester",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/polva_haigla_x-tee_alamsusteem"
+          }
+        ],
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": {
+            "status": null,
+            "timestamp": null
+          },
+          "update_timestamp": "2017-06-06T10:38:26Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": null
+          },
+          "creation_timestamp": "2017-06-01T17:25:18Z",
+          "development_status": null
+        },
+        "name": "Põlva Haigla X-tee alamsüsteem",
+        "short_name": "10050157-generic-consumer",
+        "data_files": null,
+        "uuid": "8688182f-f590-582e-195a-157bbcff9904",
+        "legislations": null,
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10059388",
+          "name": "AS STV"
+        },
+        "purpose": "x-tee alamsüsteem andmeteenuste tarbimiseks Personalihalduse infosüsteemi jaoks",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/virosoft_personali_takvara"
+          }
+        ],
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": {
+            "status": null,
+            "timestamp": null
+          },
+          "update_timestamp": "2017-06-06T16:21:04Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": null
+          },
+          "creation_timestamp": "2017-06-02T14:09:11Z",
+          "development_status": null
+        },
+        "name": "Virosoft Personali takvara",
+        "short_name": "10059388-virosoft",
+        "data_files": null,
+        "uuid": "104e0ddf-0869-9dd3-c13b-f64ad4784124",
+        "legislations": null,
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10060701",
+          "name": "Swedbank AS"
+        },
+        "purpose": "Swedbank AS alamsüsteem kasutamaks teiste osapoolte poolt pakutavaid andmeteenuseid",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/swedbank_x-tee_alamsusteem"
+          }
+        ],
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": {
+            "status": null,
+            "timestamp": null
+          },
+          "update_timestamp": "2017-06-08T11:33:08Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": null
+          },
+          "creation_timestamp": "2017-06-06T13:14:44Z",
+          "development_status": null
+        },
+        "name": "Swedbank X-tee alamsüsteem",
+        "short_name": "10060701-generic-consumer",
+        "data_files": null,
+        "uuid": "bab34350-4dec-1c96-e039-66dd3fbf6ec5",
+        "legislations": null,
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10066299",
+          "name": "Adven Eesti AS"
+        },
+        "purpose": "x-tee alamsüsteem andmeteenuste tarbimiseks Personalihalduse infosüsteemi jaoks",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/virosoft_personali_takvara/1"
+          },
+          {
+            "name": "xtee_nouetele_vastavus_kinnitus.bdoc",
+            "url": "file://e68c1e3f-cda6-6fd5-a2e6-6c1948607bb3"
+          }
+        ],
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": {
+            "status": null,
+            "timestamp": null
+          },
+          "update_timestamp": "2017-10-17T09:07:52Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": null
+          },
+          "creation_timestamp": "2017-10-04T11:13:37Z",
+          "development_status": null
+        },
+        "name": "Virosoft Personali takvara",
+        "short_name": "10066299-virosoft",
+        "data_files": null,
+        "uuid": "07d0fb5d-c945-4bc8-8990-050d85891d95",
+        "legislations": null,
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10098106",
+          "name": "Aktsiaselts SPIN TEK"
+        },
+        "purpose": "X-tee alamsüsteem kajastab X-tee liitumispunkti, st X-tee liikme ja kasutatava turvaserveri seost.",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/spintek_as_x-tee_alamsusteem_andmeteenuste_tarbimiseks"
+          }
+        ],
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": {
+            "status": null,
+            "timestamp": null
+          },
+          "update_timestamp": "2016-10-10T10:40:25Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": null
+          },
+          "creation_timestamp": "2016-07-20T13:47:41Z",
+          "development_status": null
+        },
+        "name": "SpinTEK AS X-tee alamsüsteem andmeteenuste tarbimiseks",
+        "short_name": "10098106-generic-consumer",
+        "data_files": null,
+        "uuid": "0526d054-7bed-a6f3-5742-2718ca871b4a",
+        "legislations": null,
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10098106",
+          "name": "Aktsiaselts SPIN TEK"
+        },
+        "purpose": "Alamsüsteem katab Kalmistute registri tarbitavaid x-tee andmeteenuseid.",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/kalmistute_registri_x-tee_alamsusteem"
+          },
+          {
+            "name": "xtee_nouetele_vastavus_kinnitus_SpinTEK.bdoc",
+            "url": "file://c536e111-e717-cb02-870a-91773891301a"
+          }
+        ],
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": {
+            "status": null,
+            "timestamp": null
+          },
+          "update_timestamp": "2017-09-12T10:10:57Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": null
+          },
+          "creation_timestamp": "2017-02-16T10:33:53Z",
+          "development_status": null
+        },
+        "name": "Kalmistute registri x-tee alamsüsteem",
+        "short_name": "10098106-haudi",
+        "data_files": null,
+        "uuid": "04e05df4-855e-2476-16c3-5c36abdbd7a3",
+        "legislations": [
+          {
+            "name": "Andmeteenuse vahendamise kord",
+            "url": "http://www.spin.ee/Kalmistumajanduse-infosusteem-Haudi"
+          }
+        ],
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10098106",
+          "name": "Aktsiaselts SPIN TEK"
+        },
+        "purpose": "Alamsüsteem katab Lemmikloomaregistri tarbitavaid x-tee andmeteenuseid.",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/lemmikloomaregistri_x-tee_alamsusteem"
+          }
+        ],
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": {
+            "status": null,
+            "timestamp": null
+          },
+          "update_timestamp": "2017-02-15T12:24:52Z",
+          "system_status": {
+            "status": "ESTABLISHING",
+            "timestamp": null
+          },
+          "creation_timestamp": "2017-02-15T08:42:36Z",
+          "development_status": null
+        },
+        "name": "Lemmikloomaregistri X-tee alamsüsteem",
+        "short_name": "10098106-llr",
+        "data_files": null,
+        "uuid": "9b0d51a0-65ab-3c1f-07f1-71c9e385d9ab",
+        "legislations": [
+          {
+            "name": "Andmeteenuse vahendamise kord",
+            "url": "https://www.riigiteataja.ee/akt/127092016004"
+          }
+        ],
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10102368",
+          "name": "aktsiaselts Andevis"
+        },
+        "purpose": "x-tee alamsüsteem andmeteenuste tarbimiseks Personalihalduse infosüsteemi jaoks",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/virosoft/1"
+          }
+        ],
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": {
+            "status": null,
+            "timestamp": null
+          },
+          "update_timestamp": "2017-05-23T12:50:34Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": null
+          },
+          "creation_timestamp": "2017-05-17T14:07:34Z",
+          "development_status": null
+        },
+        "name": "Virosoft Personali takvara",
+        "short_name": "10102368-virosoft",
+        "data_files": null,
+        "uuid": "b123df86-c78f-c935-7c33-484b9b317902",
+        "legislations": null,
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10111982",
+          "name": "AS Eesti Väärtpaberikeskus"
+        },
+        "purpose": "Eesti väärtpaberite keskregistri infosüsteemi eesmärk on Eesti väärtpaberite keskregistri haldamine.",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/eesti_vaartpaberite_keskregister/1"
+          }
+        ],
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": {
+            "status": null,
+            "timestamp": null
+          },
+          "update_timestamp": "2016-11-03T12:12:46Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": null
+          },
+          "creation_timestamp": "2016-10-27T15:59:32Z",
+          "development_status": null
+        },
+        "name": "EVKR alamsüsteem",
+        "short_name": "10111982-evkr",
+        "data_files": null,
+        "uuid": "b0ee5632-6d4b-64f2-74c9-ad1d0e925456",
+        "legislations": [
+          {
+            "name": "Eesti väärtpaberite keskregistri pidamise kord",
+            "url": "https://www.riigiteataja.ee/akt/13072415?leiaKehtiv"
+          },
+          {
+            "name": "EESTI VÄÄRTPABERITE KESKREGISTRI SEADUS",
+            "url": "https://www.riigiteataja.ee/akt/123122014025?leiaKehtiv"
+          }
+        ],
+        "homepage": "https://www.e-register.ee/",
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10111982",
+          "name": "AS Eesti Väärtpaberikeskus"
+        },
+        "purpose": "Eesti kohustusliku kogumispensioni ehk pensioni II samba infosüsteem. See on loodud Eesti Väärtpaberikeskuse (EVK) poolt kohustusliku kogumispensioni ehk pensioni II samba registri haldamiseks",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/kohustusliku_kogumispensioni_register/1"
+          }
+        ],
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": {
+            "status": null,
+            "timestamp": null
+          },
+          "update_timestamp": "2016-11-03T10:12:51Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": "2002-05-05T00:00:00Z"
+          },
+          "creation_timestamp": "2016-09-15T16:32:33Z",
+          "development_status": null
+        },
+        "name": "KPR alamsüsteem",
+        "short_name": "10111982-kpr",
+        "data_files": null,
+        "uuid": "1a70ea46-5d6e-baf3-ded2-bac3a0fb53ee",
+        "legislations": [
+          {
+            "name": "EESTI VÄÄRTPABERITE KESKREGISTRI SEADUS",
+            "url": "https://www.riigiteataja.ee/akt/123122014025?leiaKehtiv"
+          }
+        ],
+        "homepage": null,
+        "stored_data": null
+      }
+    },
+    {
+      "id": null,
+      "details": {
+        "owner": {
+          "code": "10117826",
+          "name": "Bisnode Estonia AS"
+        },
+        "purpose": "Bisnode Estonia pakub oma klientidele äriinfoteenuseid, et aidata ettevõtetel teha paremaid äriotsuseid, suurendada müüki ja vähendada äririske",
+        "documents": [
+          {
+            "name": "Kirjeldus vanas RIHAs",
+            "url": "https://vana.riha.ee/riha/main/inf/intranet/1"
+          }
+        ],
+        "topics": [
+          "X-tee alamsüsteem"
+        ],
+        "meta": {
+          "x_road_status": {
+            "status": null,
+            "timestamp": null
+          },
+          "update_timestamp": "2017-06-08T16:50:50Z",
+          "system_status": {
+            "status": "IN_USE",
+            "timestamp": null
+          },
+          "creation_timestamp": "2017-06-02T12:03:30Z",
+          "development_status": null
+        },
+        "name": "Intranet",
+        "short_name": "10117826-intranet",
+        "data_files": null,
+        "uuid": "33c6a7ba-57cf-f4ab-51ae-72c838ce4f24",
+        "legislations": null,
+        "homepage": null,
+        "stored_data": null
+      }
+    }
+  ],
+  "page": 0,
+  "totalPages": 84,
+  "size": 20
+}
