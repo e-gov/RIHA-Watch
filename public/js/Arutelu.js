@@ -21,8 +21,8 @@ function leiaArutelud(systeemideNimekiri) {
   for (var i = 0; i < systeemideNimekiri.length; i++) {
     /* Päri süsteemiga seotud arutelud */
     var u = 'https://apidemojatest.herokuapp.com/arutelud?s=' + systeemideNimekiri[i].details.short_name;
-    console.log(systeemideNimekiri[i].details.short_name);
-    fetch('https://apidemojatest.herokuapp.com/arutelud')
+    console.log(u);
+    fetch(u)
       .then(function (response) {
         return response.json();
       })
