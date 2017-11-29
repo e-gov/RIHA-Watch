@@ -9,12 +9,11 @@ function leiaSysteemid() {
     })
     .then(saadudJSON => {
       $('#Teade').addClass('peidetud');
-      console.log('Andmed saadud');
       kuvaArutelud(saadudJSON.totalElements);
       leiaArutelud(saadudJSON.content);
     })
     .catch(error => {
-      console.log('Andmete saamine ebaõnnestus');
+      console.log('leiaSysteemid: Andmete saamine ebaõnnestus');
     });
 }
 
@@ -31,7 +30,7 @@ function leiaArutelud(systeemideNimekiri) {
         kuvaArutelud(saadudJSON);
       })
       .catch(error => {
-        console.log('Andmete saamine ebaõnnestus');
+        console.log('leiaArutelud: Andmete saamine ebaõnnestus');
       });
   } 
 }
