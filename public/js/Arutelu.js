@@ -22,7 +22,7 @@ function leiaArutelud(systeemideNimekiri) {
     /* Päri süsteemiga seotud arutelud */
     var u = 'https://apidemojatest.herokuapp.com/arutelud?s=' + systeemideNimekiri[i].details.short_name;
     console.log(systeemideNimekiri[i].details.short_name);
-    fetch(u)
+    fetch('https://apidemojatest.herokuapp.com/arutelud')
       .then(function (response) {
         return response.json();
       })
