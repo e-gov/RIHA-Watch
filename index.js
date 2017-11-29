@@ -52,7 +52,7 @@ app.get('/systeeme', (req, res) => {
 /* Süsteemi arutelude päring RIHA-st (AJAX) */
 app.get('/arutelud', (req, res) => {
   res.status(200)
-    .send('OK');
+    .send('{"vastus":"OK"}');
   return
   var shortname = req.query.s; 
   requestModule({
