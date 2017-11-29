@@ -30,7 +30,7 @@ function leiaArutelud(systeemideNimekiri) {
         kuvaArutelud(saadudJSON);
       })
       .catch(error => {
-        console.log('leiaArutelud: error: ' + error.toString());
+        console.log('leiaArutelud: error: ' + error);
       });
   } 
 }
