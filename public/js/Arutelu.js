@@ -1,4 +1,5 @@
 function alusta() {
+  kuvaString('Alustus');
   leiaSysteemid();
 }
 
@@ -27,7 +28,7 @@ function leiaArutelud(systeemideNimekiri) {
         return response.json();
       })
       .then(saadudJSON => {
-        kuvaArutelud(saadudJSON);
+        kuvaString(saadudJSON);
       })
       .catch(error => {
         console.log('leiaArutelud: error: ' + error);
@@ -35,6 +36,6 @@ function leiaArutelud(systeemideNimekiri) {
   } 
 }
 
-function kuvaArutelud(json) {
-  var p = $("p").html(json.toString()).appendTo('#Arutelud');
+function kuvaString(s) {
+  $('p').text(s).appendTo('#Arutelud');
 }
