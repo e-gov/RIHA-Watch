@@ -3,13 +3,14 @@ function alusta() {
 }
 
 function leiaSysteemid() {
-  fetch('https://apidemojatest.herokuapp.com/koik')
+  fetch('https://apidemojatest.herokuapp.com/systeeme')
   .then(function (response) {
     return response.json();
   })
   .then(saadudJSON => {
     $('#Teade').addClass('peidetud');
     console.log('Andmed saadud');
+    kuvaArutelud(saadudJSON.totalElements);
     leiaArutelud(saadudJSON.content);
   })
   .catch(error => {
