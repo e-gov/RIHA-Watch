@@ -51,6 +51,9 @@ app.get('/systeeme', (req, res) => {
 
 /* Süsteemi arutelude päring RIHA-st (AJAX) */
 app.get('/arutelud', (req, res) => {
+  res.status(200)
+    .send('OK');
+  return
   var shortname = req.query.s; 
   requestModule({
     url: 'https://test.riha.ee/api/v1/systems/' + shortName + '/issues',
