@@ -1,5 +1,4 @@
 function alusta() {
-  kuvaString('Alustus');
   leiaSysteemid();
 }
 
@@ -10,7 +9,7 @@ function leiaSysteemid() {
     })
     .then(saadudJSON => {
       $('#Teade').addClass('peidetud');
-      kuvaArutelud(saadudJSON.totalElements);
+      kuvaString(saadudJSON.totalElements + ' süsteemi');
       leiaArutelud(saadudJSON.content);
     })
     .catch(error => {
