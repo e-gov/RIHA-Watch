@@ -27,7 +27,7 @@ function leiaArutelud(systeemideNimekiri) {
         return response.json();
       })
       .then(saadudJSON => {
-        kuvaString(saadudJSON,vastus);
+        kuvaString(saadudJSON.vastus);
       })
       .catch(error => {
         console.log('leiaArutelud: error: ' + error);
