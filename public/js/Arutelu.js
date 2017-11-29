@@ -36,5 +36,6 @@ function leiaArutelud(systeemideNimekiri) {
 }
 
 function kuvaString(s) {
-  $('p').text(s).appendTo('#Arutelud');
+  var t = $('#Arutelud').html();
+  $('#Arutelud').html(t + '<br>' + s);
 }
