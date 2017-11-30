@@ -53,7 +53,7 @@ app.get('/systeeme', (req, res) => {
 app.get('/arutelud', (req, res) => {
   var shortname = req.query.s; 
   requestModule({
-    url: 'https://test.riha.ee/api/v1/systems/' + shortName + '/issues',
+    url: 'https://www.riha.ee/api/v1/systems/' + shortName + '/issues',
     method: 'GET'
   },
     (error, response, body) => {
