@@ -3,7 +3,7 @@ function alusta() {
 }
 
 function leiaSysteemid() {
-  fetch('https://apidemojatest.herokuapp.com/systeeme')
+  fetch('https://apidemojatest.herokuapp.com/koik')
     .then(function (response) {
       return response.json();
     })
