@@ -20,14 +20,17 @@ function leiaSysteemid() {
 function leiaArutelud(systeemideNimekiri) {
   for (var i = 0; i < systeemideNimekiri.length; i++) {
     /* Päri süsteemiga seotud arutelud */
-    var u = 'https://apidemojatest.herokuapp.com/arutelud?s=' + systeemideNimekiri[i].details.short_name;
+    var sn = systeemideNimekiri[i].details.short_name;
+    var u = 'https://apidemojatest.herokuapp.com/arutelud?s=' + sn;
     console.log(u);
     fetch(u)
       .then(function (response) {
         return response.json();
       })
       .then(saadudJSON => {
-        kuvaString(saadudJSON.toString());
+        if (saadudJSON.totalElements > 0) {
+          kuvaString(sn + ': ' + saadudJSON.totalElements.toString());
+        }
       })
       .catch(error => {
         console.log('leiaArutelud: error: ' + error);
