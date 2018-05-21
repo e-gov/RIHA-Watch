@@ -71,7 +71,7 @@ app.get('/arutelud', (req, res) => {
 /* Süsteemide nimekirja päring RIHA-st (AJAX) */
 app.get('/koik', (req, res) => {
   requestModule({
-    url: 'https://riha.ee/api/v1/systems?size=2000',
+    url: 'https://riha.ee/api/v1/systems?size=3000',
     method: 'GET'
   },
     (error, response, body) => {

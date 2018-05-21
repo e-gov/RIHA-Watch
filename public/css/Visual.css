@@ -3,8 +3,22 @@ body { padding: 2rem 2rem 8rem 2rem; }
 
 /* Üldine font ja fondisuurus */
 body, textarea, input, legend {  
-  font-family: 'Anonymous Pro', serif !important;
-  font-size: 13pt !important;
+  font-family: 'Arial', sans-serif;
+  font-size: 17px;
+}
+
+h1 {
+  font-size: 24px !important;
+  font-family: 'Segoe UI Semibold', Arial, Helvetica, sans-serif;
+  margin-top: 1em;
+  margin-bottom: 1rem;
+}
+h2 {
+  /* font-size: 13pt !important; */
+  font-size: 1.17em;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .ikoon { font-family: 'Material Icons';
@@ -19,8 +33,7 @@ body, textarea, input, legend {
   color: Tomato;
   border-radius: 4px;
   padding: 4px;
-  font-family: 'Courier New', monospace;
-  font-size: 14pt;
+  font-family: monospace;
 }
 
 .peidetud {

@@ -6,48 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RIHA-Watch</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
-    
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
 
     <!-- Material Design icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-      crossorigin="anonymous">
-    <!-- Tether on vaja tooltip-de jaoks -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
-
     <!-- Stiilid -->
     <link rel='stylesheet' href='css/Visual.css'>
 
     <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  
+
     <script src='js/Watch.js'></script>
 
   </head>
 
   <body onload="alusta()">
-    <div class='container-fluid'>
-      <div class='row'>
-        <div class='col-xs-12 col-sm-10 col-md-10 col-lg-8 col-xl-6'>
 
-          <p>RIHA aktiivsusmonitor v0.2</p>
-          <p id='Teade'><span class='Loendur'>Andmeid laetakse...</span></p>
-          <p id='Diagramm'></p>
-          <p id='Detailid'></p>
+    <h1>RIHA-Vaht</h1>
+    <p id='Teade'>
+      <span class='Loendur'>Andmeid laetakse...</span>
+    </p>
+    <p id='Diagramm'></p>
+    <p id='Detailid'></p>
 
-        </div>
-      </div>
+    <% include ../partials/jalus.ejs %>
 
-      <% include ../partials/jalus.ejs %>
-      
-    </div>
   </body>
 
 </html>
