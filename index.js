@@ -16,56 +16,9 @@ app.set('views', __dirname + '/views');
 // a directory for application's views
 app.set('view engine', 'ejs');
 
-/* RIHA API demoleht */
-app.get('/', function (req, res) {
-  res.render('pages/index');
-});
-
 /* RIHA aktiivsusmonitori leht */
-app.get('/watch', function (req, res) {
+app.get('/', function (req, res) {
   res.render('pages/watch');
-});
-
-/* Arutelude ülevaateleht */
-app.get('/arutelu', function (req, res) {
-  res.render('pages/arutelu');
-});
-
-/* Süsteemide arvu päring RIHA-st (AJAX) */
-app.get('/systeeme', (req, res) => {
-  requestModule({
-    url: 'https://www.riha.ee/api/v1/systems',
-    method: 'GET'
-  },
-    (error, response, body) => {
-      if (error) {
-        console.log('Viga: ', error);
-      }
-      if (response) {
-        console.log('Päring RIHAsse - staatus: ', response.statusCode);
-        res.status(200)
-          .send(body);
-      }
-  });
-});
-
-/* Süsteemi arutelude päring RIHA-st (AJAX) */
-app.get('/arutelud', (req, res) => {
-  var shortName = req.query.s; 
-  requestModule({
-    url: 'https://www.riha.ee/api/v1/systems/' + shortName + '/issues',
-    method: 'GET'
-  },
-    (error, response, body) => {
-      if (error) {
-        console.log('Viga: ', error);
-      }
-      if (response) {
-        console.log('/arutelud (Süsteemi arutelude päring RIHA-st) - staatus: ', response.statusCode);
-        res.status(200)
-          .send(body);
-      }
-  });
 });
 
 /* Süsteemide nimekirja päring RIHA-st (AJAX) */
@@ -80,26 +33,6 @@ app.get('/koik', (req, res) => {
       }
       if (response) {
         console.log('/koik (Süsteemide nimekirja päring RIHA-st) - staatus: ', response.statusCode);
-        res.status(200)
-          .send(body);
-      }
-  });
-});
-
-/* Avalike teenuste nimekirja päring
- riigiteenuste portaalist (AJAX) */
-app.get('/avalikud', (req, res) => {
-  console.log('*** Avalikke teenuseid? ***');
-  requestModule({
-    url: 'https://www.riigiteenused.ee/api/et/all',
-    method: 'GET'
-  },
-    (error, response, body) => {
-      if (error) {
-        console.log('Viga: ', error);
-      }
-      if (response) {
-        console.log('Päring riigiteenused.ee-sse - staatus: ', response.statusCode);
         res.status(200)
           .send(body);
       }
